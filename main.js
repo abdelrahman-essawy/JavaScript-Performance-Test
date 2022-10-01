@@ -19,6 +19,7 @@ let performanceOf = async (codeToBeExcuted, numberOfTimes) => {
         let result = endTime - startTime
         average += result
     }
+    document.getElementById('successAlert').classList.replace('d-none', 'd-block');
     document.getElementById('successAlert').innerHTML = `It Took ${average / numberOfTimes} To Excute It Over ${numberOfTimes} Times.`
     // console.log(`It Took ${average / numberOfTimes} To Excute It Over ${numberOfTimes} Times.`);
 }
