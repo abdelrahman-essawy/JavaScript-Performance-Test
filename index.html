@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h3 class="title mt-4">Performance Test of JavaScript Code</h3>
+    <div class="editor-container">
+<div id="editor">
+let forEachMethod = () => {
+
+    let userList = [
+        { fname: 'Abdelrahman', lName: 'Mohamed' },
+        { fname: 'Ahmed', lName: 'Mohamed' }
+    ];
+    userList.forEach(user => {
+        user.fullname = user.fName + ` ` + user.lName;
+    });
+};
+</div>
+    </div>
+    <div id="buttonsGroup" class="input-group mb-3">
+        <input id="numberId" type="number" class="form-control" placeholder="How Many Times To Run The Code?">
+        <button id="runButton" class="btn btn-outline-secondary" type="button" id="button-addon2">Run</button>
+    </div>
+    <div id="successAlert" class="alert alert-success d-block" role="alert">
+        A simple success alert—check it out!
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
