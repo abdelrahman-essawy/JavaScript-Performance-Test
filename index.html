@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <h3 class="title mt-4">Performance Test of JavaScript Code</h3>
+    <div class="title">    
+        <h3 id="titleId" class="title mt-4">Performance Test of JavaScript Code</h3>
+    </div>
     <div class="editor-container">
 <div id="editor">
 let forEachMethod = () => {
@@ -31,10 +33,18 @@ let forEachMethod = () => {
         <input id="numberId" type="number" class="form-control" placeholder="How Many Times To Run The Code?">
         <button id="runButton" class="btn btn-outline-secondary" type="button" id="button-addon2">Run</button>
     </div>
-    <div id="successAlert" class="alert alert-success d-none" role="alert">
+    <div id="successAlert" class="alert alert-success" role="alert">
         A simple success alert—check it out!
     </div>
 
+
+
+    <script src="jquery/jquery-1.8.3.min.js"></script>
+<script src="ace/ace.js"></script>
+<script src="ace/theme-twilight.js"></script>
+<script src="ace/mode-ruby.js"></script>
+<script src="jquery-ace.min.js"></script>
+    <script src="jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
 
     <script src="main.js"></script>

@@ -1,5 +1,5 @@
 
-h3.title {
+#titleId {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   text-align: center;
@@ -33,4 +33,7 @@ h3.title {
 }
 #runButton{
   width: 100px;
+}
+#successAlert{
+  display: none;
 }
